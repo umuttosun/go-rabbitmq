@@ -13,7 +13,7 @@ func (r *RabbitMQ) Publish(queueName, body string) error {
 	}
 	defer ch.Close()
 
-	_, err = ch.QueueDeclare(
+	_, err = ch.QueueDeclarePassive(
 		queueName,
 		true, false, false, false, nil,
 	)
