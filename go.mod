@@ -1,4 +1,4 @@
-module github.com/umuttosun/go-rabbitmq
+module github.com/treliq-hq/go-rabbitmq
 
 go 1.24.2
 
